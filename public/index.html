@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Output Stylesheet -->
+    <link rel="stylesheet" href="/public/styles.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Tailwindcss Practice</title>
+</head>
+<body>
+    <div class="grid grid-cols-3 font-body">
+        <!-- left -->
+        <div class="col-span-1 flex justify-end">
+            <header>
+                <h1 class="text-secondary-200 font-bold p-3 tracking-wide mb-8">FOOD NINJA</h1>
+                <nav class="text-sm">
+                    <ul>
+                        <li class="grid grid-cols-2 border-r-4 border-primary">
+                            <a href="#" class="text-right">Home</a>
+                            <div class="flex justify-center"><i class="fas fa-home"></i></div>
+                        </li>
+                        <li class="grid grid-cols-2 border-r-4 border-white text-secondary-200">
+                            <a href="#" class="text-right">About</a>
+                            <div class="flex justify-center"><i class="fas fa-lightbulb"></i></div>
+                        </li>
+                        <li class="grid grid-cols-2 border-r-4 border-white text-secondary-200">
+                            <a href="#" class="text-right">Contact</a>
+                            <div class="flex justify-center"><i class="far fa-envelope"></i></div>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+        <!-- right -->
+        <main class="col-span-2 bg-gray-100 px-14 py-3">
+            <!-- Flex container for buttons -->
+            <div class="flex justify-end text-primary">
+                <a href="#" class="btn border-2 border-primary mr-2">log in</a>
+                <a href="#" class="btn border-2 border-primary">sign up</a>
+            </div>
+
+            <h2 class="text-gray-600 text-6xl tracking-wider">Recipes</h2>
+            <h3 class="text-secondary-200 text-2xl mb-14">For Ninjas</h3>
+
+            <section class="mt-10">
+                <h4 class="section-title">Latest Recipes</h4>
+                <!-- Flex container for cards -->
+                <div class="flex gap-9">
+                    <!-- Card 1 -->
+                    <div class="card">
+                        <img class="rounded-t-md" src="./img/stew.jpeg" alt="">
+                        <div class="recipe-time">
+                            <i class="far fa-clock"></i>
+                            <span class="text-xs">25 MINS</span>
+                        </div>
+                        <div class="p-3">
+                            <h5 class="text-secondary-200 font-bold text-sm">5 Bean Chili Stew</h5>
+                            <span class="text-gray-400 text-xs">Recipe by Mario</span>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="card">
+                        <img class="rounded-t-md" src="./img/curry.jpeg" alt="">
+                        <div class="recipe-time">
+                            <i class="far fa-clock"></i>
+                            <span class="text-xs">25 MINS</span>
+                        </div>
+                        <div class="p-3">
+                            <h5 class="text-secondary-200 font-bold text-sm">5 Bean Chili Stew</h5>
+                            <span class="text-gray-400 text-xs">Recipe by Mario</span>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="card">
+                        <img class="rounded-t-md" src="./img/noodles.jpeg" alt="">
+                        <div class="recipe-time">
+                            <i class="far fa-clock"></i>
+                            <span class="text-xs">25 MINS</span>
+                        </div>
+                        <div class="p-3">
+                            <h5 class="text-secondary-200 font-bold text-sm">5 Bean Chili Stew</h5>
+                            <span class="text-gray-400 text-xs">Recipe by Mario</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mt-10">
+                <h4 class="section-title">Most Popular</h4>
+                <!-- Flex container for cards -->
+                <div class="flex gap-9">
+                    <!-- Card 1 -->
+                    <div class="card">
+                        <img class="rounded-t-md" src="./img/stew.jpeg" alt="">
+                        <div class="recipe-time">
+                            <i class="far fa-clock"></i>
+                            <span class="text-xs">25 MINS</span>
+                        </div>
+                        <div class="p-3">
+                            <h5 class="text-secondary-200 font-bold text-sm">5 Bean Chili Stew</h5>
+                            <span class="text-gray-400 text-xs">Recipe by Mario</span>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="card">
+                        <img class="rounded-t-md" src="./img/curry.jpeg" alt="">
+                        <div class="recipe-time">
+                            <i class="far fa-clock"></i>
+                            <span class="text-xs">25 MINS</span>
+                        </div>
+                        <div class="p-3">
+                            <h5 class="text-secondary-200 font-bold text-sm">5 Bean Chili Stew</h5>
+                            <span class="text-gray-400 text-xs">Recipe by Mario</span>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="card">
+                        <img class="rounded-t-md" src="./img/noodles.jpeg" alt="">
+                        <div class="recipe-time">
+                            <i class="far fa-clock"></i>
+                            <span class="text-xs">25 MINS</span>
+                        </div>
+                        <div class="p-3">
+                            <h5 class="text-secondary-200 font-bold text-sm">5 Bean Chili Stew</h5>
+                            <span class="text-gray-400 text-xs">Recipe by Mario</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="flex justify-center mt-12">
+                <button class="btn text-secondary-200 bg-secondary-100">load more</button>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
