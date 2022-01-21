@@ -722,16 +722,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-duration: 150ms;
 }
 
-.duration-75{
-  transition-duration: 75ms;
-}
-
 .duration-300{
   transition-duration: 300ms;
-}
-
-.duration-200{
-  transition-duration: 200ms;
 }
 
 .hover\:bg-primary:hover{
